@@ -1,0 +1,1 @@
+.ripple{position:relative;overflow:hidden;z-index:10}.ripple-effect{width:10px;height:10px;background:#fff;opacity:.2;border-radius:50%;position:absolute;top:10px;left:10px;animation:ripple 1s normal forwards cubic-bezier(0,0,.2,1);z-index:0}@keyframes ripple{0%{transform:scale(1)}90%{transform:scale(50)}100%{transform:scale(50);opacity:0}}

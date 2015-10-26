@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Material ripple</title>
+    <link rel="stylesheet" type="text/css" href="../dist/ripple.min.css">
+    <style>
+        body {
+            background: #2c3e50;
+            color: white;
+            font-family: 'verdana';
+        }
+        .wrap {
+            margin: 50px auto 0;
+            width: 250px;
+            text-align:center;
+        }
+        .wrap>div {
+            margin-top: 20px;
+            box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.1);
+            color:black;
+            text-align: center;
+            cursor: pointer;
+        }
+        .button1 {
+            width: 250px;
+            height: 50px;
+            background: #27ae60;
+            line-height: 50px;
+        }
+        .button2 {
+            width: 85px;
+            height: 60px;
+            background: #3498db;
+            padding-top: 25px;
+            border-radius: 50%;
+            margin-left: 80px;
+        }
+        .button3 {
+            width: 250px;
+            height: 50px;
+            background: #e74c3c;
+            line-height: 50px;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="wrap">
+    <h1>Simple native js ripple effect</h1>
+    <div class="ripple button1">I haz ripple</div>
+    <div class="ripple button2">Border<br>radius!</div>
+    <div class="ripple button3" data-ripple-color="#f1c40f" data-ripple-opacity="1">I haz custom ripple</div>
+</div>
+
+</body>
+<script type="text/javascript" src="../dist/ripple.min.js"></script>
+<script>
+    initSimpleRipple();
+</script>
+</html>
